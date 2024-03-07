@@ -23,7 +23,7 @@ From here I pulled information on the income and racial spread of the residents 
 
 Police Data: (https://www.nashville.gov/departments/police) & (https://data.nashville.gov/Police/Metro-Nashville-Police-Department-Incidents/2u6v-ujjs/about_data)
 
-From here I pulled the data about the police and there coverage times for all of 2023
+From here I pulled the data about the police and there coverage times for all of 2023.
 
 **Tools**
 
@@ -42,7 +42,7 @@ First, I wanted to take a look at how police coverage times compared to the diff
 *Back to [Contents](#Contents)*
 
 ### **Challenges**
-The main challenges I had were getting the police coverage times (per minute and per hour) and figuring out how to get rid of outliers in the police datasets efficiently. The coverage times were the datetime data type, and needed to be converted so I could perform numerical operations on them. But this proved to be fairly easy after help from stackoverflow.com and my peers. Tackling the second challenge however took some time. At first, I used the mean to calculate average coverage time for the police. But there were outliers making the data seem unrealistic, with most average times taking anywhere from 5-6 hours to completely handle each call for service. I also could not reasonably go through the data set and remove all the outliers because there were about 53,000 calls in Nashville within the parameters I had set. So I took the median of all my coverage and call for service numbers because it grabbed the most equidistant number between the two extremities of whatever metric I was cleaning, even with the outliers.
+The main challenges I had were getting the police coverage times (per minute and per hour) and figuring out how to get rid of outliers in the police datasets efficiently. The coverage times were the datetime data type, and needed to be converted so I could perform numerical operations on them. But this proved to be fairly easy after help from stackoverflow.com and my peers. Tackling the second challenge, however, took some time. At first, I used the mean to calculate average coverage time for the police. But there were outliers making the data seem unrealistic, with most average times taking anywhere from 4-6 hours to completely handle each call for service. I also could not reasonably go through the data set and remove all the outliers because there were about 53,000 calls in Nashville within the parameters I had set. So I took the median of all my coverage and calls for service numbers because it grabbed the most equidistant number between the two extremities of whatever metric I was cleaning, even with the outliers.
 
 *Back to [Contents](#Contents)*
 
